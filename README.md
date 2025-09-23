@@ -21,18 +21,18 @@ git submodule foreach git checkout master
 ## Configure the Build  
 Run the following command to configure the build:  
 ```bash  
-make config  
+sudo make config  
 ```  
-**Note:** After completing `make config`, if you want to adjust the kernel configuration, use:  
+**Note:** After completing `sudo make config`, if you want to adjust the kernel configuration, use:  
 ```bash  
-make kconfig  
+sudo make kconfig  
 ```  
-Do **not** manually enter the `linux/kernel` folder to run `make menuconfig`.  
+Do **not** manually enter the `linux/kernel` folder to run `sudo make menuconfig`.  
 
 ## Build the Project  
 To build all components, execute:  
 ```bash  
-make  
+sudo make  
 ```  
 If your local `LANG` environment variable is not set to English, use:  
 ```bash  
